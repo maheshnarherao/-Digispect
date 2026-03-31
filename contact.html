@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digispect Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Digispect Technologies</span>
+                 <span class="logo-icon">◆</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Let's discuss your project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="content-container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="6" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="terms" required>
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>Contact Information</h2>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Office Address</h4>
+                            <p>
+                                Digispect Technologies<br>
+                                123 Tech Park Avenue<br>
+                                San Francisco, CA 94105<br>
+                                United States
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>
+                                Main: <a href="tel:+14155550100">+1 (415) 555-0100</a><br>
+                                Support: <a href="tel:+14155550101">+1 (415) 555-0101</a><br>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>
+                                General: <a href="mailto:info@digispect.com">info@digispect.com</a><br>
+                               
+                                Support: <a href="mailto:support@digispect.com">support@digispect.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>
+                                Monday - Friday: 9:00 AM - 6:00 PM PST<br>
+                                Saturday: 10:00 AM - 4:00 PM PST<br>
+                                Sunday: Closed<br>
+                                24/7 Emergency Support Available
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="LinkedIn">in</a>
+                            <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                            <a href="#" class="social-icon" title="Facebook">f</a>
+                            <a href="#" class="social-icon" title="Instagram">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="content-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is the typical project timeline?</h4>
+                    <p>Project timelines vary based on scope and complexity. Most projects range from 4 weeks to 6 months. We'll provide a detailed timeline after initial consultation.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer maintenance and support?</h4>
+                    <p>Yes! We offer comprehensive post-launch support packages including bug fixes, updates, and optimization. Support can be monthly or on-demand.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept bank transfers, credit cards, and PayPal. We can also arrange flexible payment schedules for larger projects.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can you work with my existing team?</h4>
+                    <p>Absolutely! We're experienced in collaborating with internal teams and other vendors. We'll integrate seamlessly with your workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Digispect Technologies</h3>
+                <p>Leading IT solutions provider for modern businesses</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#web-dev">Web Development</a></li>
+                    <li><a href="services.html#app-dev">App Development</a></li>
+                    <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:info@digispect.com">Email Us</a></li>
+                    <li><a href="tel:+14155550100">Call Now</a></li>
+                    <li><a href="contact.html">Get Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Digispect Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
